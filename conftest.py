@@ -1,6 +1,7 @@
 import pytest
 from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 def pytest_addoption(parser):
     parser.addoption('--browser_name', action='store', default="chrome",
