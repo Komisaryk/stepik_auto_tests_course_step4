@@ -30,3 +30,6 @@ class ProductPage(BasePage):
         product_price = self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE).text
         alert_txt = self.browser.find_element(*ProductPageLocators.ALERT_CART_PRICE_TXT).text
         assert product_price == alert_txt, "Alert don't contains product price"
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.ALERT_PRODUCT_ADDED), "Success message is presented, but should not be"
