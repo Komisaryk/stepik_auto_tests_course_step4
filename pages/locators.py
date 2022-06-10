@@ -19,3 +19,7 @@ class ProductPageLocators():
     ALERT_PRODUCT_ADDED_INNER_TXT = (By.CSS_SELECTOR, "#messages div:nth-child(1) .alertinner strong")
     ALERT_CART_PRICE = (By.CSS_SELECTOR, "#messages div:nth-child(3)")
     ALERT_CART_PRICE_TXT = (By.CSS_SELECTOR, "#messages div:nth-child(3) .alertinner strong")
+
+class BasketPageLocators():
+    BASKET_ITEMS = (By.CSS_SELECTOR, ".basket-items")
+    BASKET_EMPTY_TXT = (By.CSS_SELECTOR, "#content_inner p:nth-child(1)")
